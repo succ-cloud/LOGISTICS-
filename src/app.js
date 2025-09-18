@@ -17,9 +17,9 @@ app.use(express.json());
 
 // Fix CORS configuration
 app.use(cors({
-   origin: ['http://127.0.0.1:5500', 'http://localhost:5500',
-    // 'https://logistics-pn8s.onrender.com',
-    'https://globallogistics.netlify.app',
+   origin: ['http://127.0.0.1:5500', 
+        'http://localhost:5500',
+      'https://globallogistics.netlify.app',
     'https://globaladmin.netlify.app'
   ], // Allow both common local development URLs
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // Add OPTIONS
